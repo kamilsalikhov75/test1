@@ -1,0 +1,20 @@
+.categories {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  .categories {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories {
+    display: block;
+    margin-bottom: 30px;
+  }
+}

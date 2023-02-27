@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Graphik LCG';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), url('/fonts/GraphikLCG-Regular.woff2') format('woff2'),
+    url('/fonts/GraphikLCG-Regular.woff2') format('woff');
+}
+
+body,
+h6,
+h5,
+h4,
+h3,
+h1,
+p,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Graphik LCG';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 0 20px;
+}
+
+.link {
+  width: fit-content;
+  color: #000000;
+  line-height: 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+.link + .link {
+  margin-top: 10px;
+}
+
+.link::after {
+  content: '';
+  border-bottom: 1px solid #000000;
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  transition: all 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
